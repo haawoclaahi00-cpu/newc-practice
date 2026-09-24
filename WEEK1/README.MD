@@ -1,40 +1,39 @@
-# DISCOUSS CHAPTER 2
+# DISCOUSS CHAPTER 1
 
-Student Information System
-
+Date Information Application
 Description
 
-This project is a simple C# Windows Forms application used to enter and display student information.
+This is a simple C# Windows Forms application that displays a complete date.
 
 The user enters:
 
-- Student Name
-- Student ID
-- Department
-- Semester
+- Day of the Week
+- Month
+- Day
+- Year
 
-The application combines the information and displays it in a label.
+The application then combines the information and displays the full date.
 
 How It Works
 
-1. Enter the student's name.
-2. Enter the Student ID.
-3. Enter the department.
-4. Enter the semester.
-5. Click the button to display the information.
-6. The application displays all the student's information.
+1. Enter the day of the week.
+2. Enter the month.
+3. Enter the day.
+4. Enter the year.
+5. Click the button to display the full date.
+6. The text boxes are cleared after the operation.
 
 Example
 
 Input:
 
-- Name: Ahmed
-- Student ID: 101
-- Department: IT
-- Semester: 3
+- Day: Wednesday
+- Month: September
+- Day: 24
+- Year: 2026
 
 Output:
-Ahmed, 101, IT, 3
+Wednesday, September 24, 2026
 
 Technologies Used
 
@@ -44,11 +43,11 @@ Technologies Used
 
 Purpose
 
-The purpose of this project is to practice:
+The purpose of this project is to practice using:
 
 - Variables
 - TextBoxes
 - Labels
-- "int.Parse()"
 - String concatenation
-- "Clear()" method
+- Clear() method
+- Close() method
