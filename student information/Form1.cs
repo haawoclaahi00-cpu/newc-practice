@@ -1,4 +1,4 @@
-namespace Student_Information
+namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
@@ -7,7 +7,93 @@ namespace Student_Information
             InitializeComponent();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string DayoftheWeek, Month, Day, Year, FullDate;
+
+            DayoftheWeek = dayOfWeekTextBox.Text;
+            Month = monthTextBox.Text;
+            Day = dayOfMonthTextBox.Text;
+            Year = yearTextBox.Text;
+
+            FullDate = DayoftheWeek + ", " + Month + " " + Day + ", " + Year;
+
+            dateOutputLabel.Text = FullDate;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dayOfMonthTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            dayOfWeekTextBox.Clear();
+            monthTextBox.Clear();
+            dayOfMonthTextBox.Clear();
+            yearTextBox.Clear();
+            dateOutputLabel.Text = "";
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_2(object sender, EventArgs e)
         {
 
         }
@@ -17,45 +103,14 @@ namespace Student_Information
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void dayOfWeekTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void txtstudentid_TextChanged(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string student_name, department;
-            int student_id, semester;
-            string fullInfo;
-
-            student_name = txtname.Text;
-            student_id = int.Parse(txtstudentid.Text);
-            department = txtdepartment.Text;
-            semester = int.Parse(txtsemester.Text);
-
-
-            fullInfo = student_name + "," + student_id + "," + department + ", " + semester;
-
-            lbloutput.Text = fullInfo;
-        }
-
-        private void btnclear_Click(object sender, EventArgs e)
-        {
-            txtname.Clear();
-            txtstudentid.Clear();
-            txtdepartment.Clear();
-            txtsemester.Clear();
-            lbloutput.Text = "";
-        }
-
-        private void btnexit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

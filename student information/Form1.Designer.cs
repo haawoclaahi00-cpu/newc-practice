@@ -1,4 +1,4 @@
-﻿namespace Student_Information
+﻿namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -28,177 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblname = new Label();
-            lblstudentid = new Label();
-            lbldepartment = new Label();
-            lblsemester = new Label();
-            lbloutput = new Label();
-            txtname = new TextBox();
-            txtstudentid = new TextBox();
-            txtdepartment = new TextBox();
-            txtsemester = new TextBox();
-            btnshowinfo = new Button();
-            btnclear = new Button();
-            btnexit = new Button();
+            TextBox monthTextBox;
+            dateOutputLabel = new Label();
+            showDateButton = new Button();
+            clearButton = new Button();
+            exitButton = new Button();
+            dateOutputLabe = new Label();
+            label1 = new Label();
+            dayOfWeekTextBox = new TextBox();
+            dayOfMonthTextBox = new TextBox();
+            yearTextBox = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            monthTextBox = new TextBox();
             SuspendLayout();
             // 
-            // lblname
+            // monthTextBox
             // 
-            lblname.AutoSize = true;
-            lblname.FlatStyle = FlatStyle.Popup;
-            lblname.Font = new Font("Bell MT", 11F);
-            lblname.Location = new Point(112, 24);
-            lblname.Name = "lblname";
-            lblname.Size = new Size(232, 25);
-            lblname.TabIndex = 0;
-            lblname.Text = "Enter the student name:";
+            monthTextBox.Location = new Point(375, 87);
+            monthTextBox.Name = "monthTextBox";
+            monthTextBox.Size = new Size(150, 31);
+            monthTextBox.TabIndex = 21;
             // 
-            // lblstudentid
+            // dateOutputLabel
             // 
-            lblstudentid.AutoSize = true;
-            lblstudentid.FlatStyle = FlatStyle.Flat;
-            lblstudentid.Font = new Font("Bell MT", 11F);
-            lblstudentid.Location = new Point(110, 85);
-            lblstudentid.Name = "lblstudentid";
-            lblstudentid.Size = new Size(209, 25);
-            lblstudentid.TabIndex = 1;
-            lblstudentid.Text = "Enter the student ID:";
+            dateOutputLabel.Dock = DockStyle.Left;
+            dateOutputLabel.Location = new Point(0, 0);
+            dateOutputLabel.Name = "dateOutputLabel";
+            dateOutputLabel.Size = new Size(10, 450);
+            dateOutputLabel.TabIndex = 14;
+            dateOutputLabel.Click += label2_Click_1;
             // 
-            // lbldepartment
+            // showDateButton
             // 
-            lbldepartment.AutoSize = true;
-            lbldepartment.FlatStyle = FlatStyle.Popup;
-            lbldepartment.Font = new Font("Bell MT", 11F);
-            lbldepartment.Location = new Point(110, 140);
-            lbldepartment.Name = "lbldepartment";
-            lbldepartment.Size = new Size(214, 25);
-            lbldepartment.TabIndex = 2;
-            lbldepartment.Text = "Enter the department:";
-            lbldepartment.Click += label3_Click;
+            showDateButton.Location = new Point(168, 328);
+            showDateButton.Name = "showDateButton";
+            showDateButton.Size = new Size(124, 53);
+            showDateButton.TabIndex = 15;
+            showDateButton.Text = "show date";
+            showDateButton.UseVisualStyleBackColor = true;
+            showDateButton.Click += button1_Click;
             // 
-            // lblsemester
+            // clearButton
             // 
-            lblsemester.AutoSize = true;
-            lblsemester.FlatStyle = FlatStyle.Popup;
-            lblsemester.Font = new Font("Bell MT", 11F);
-            lblsemester.ImageAlign = ContentAlignment.MiddleRight;
-            lblsemester.Location = new Point(112, 202);
-            lblsemester.Name = "lblsemester";
-            lblsemester.Size = new Size(189, 25);
-            lblsemester.TabIndex = 3;
-            lblsemester.Text = "Enter the semester:";
-            lblsemester.Click += label4_Click;
+            clearButton.Location = new Point(344, 331);
+            clearButton.Name = "clearButton";
+            clearButton.Size = new Size(127, 50);
+            clearButton.TabIndex = 16;
+            clearButton.Text = "clear";
+            clearButton.UseVisualStyleBackColor = true;
+            clearButton.Click += clearButton_Click;
             // 
-            // lbloutput
+            // exitButton
             // 
-            lbloutput.BackColor = SystemColors.ControlLightLight;
-            lbloutput.BorderStyle = BorderStyle.FixedSingle;
-            lbloutput.Location = new Point(97, 272);
-            lbloutput.Name = "lbloutput";
-            lbloutput.Size = new Size(580, 58);
-            lbloutput.TabIndex = 4;
+            exitButton.Location = new Point(519, 331);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(126, 50);
+            exitButton.TabIndex = 17;
+            exitButton.Text = "End";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += button3_Click;
             // 
-            // txtname
+            // dateOutputLabe
             // 
-            txtname.Location = new Point(394, 18);
-            txtname.Name = "txtname";
-            txtname.Size = new Size(249, 31);
-            txtname.TabIndex = 5;
+            dateOutputLabe.BorderStyle = BorderStyle.FixedSingle;
+            dateOutputLabe.Location = new Point(130, 262);
+            dateOutputLabe.Name = "dateOutputLabe";
+            dateOutputLabe.Size = new Size(480, 44);
+            dateOutputLabe.TabIndex = 18;
             // 
-            // txtstudentid
+            // label1
             // 
-            txtstudentid.Location = new Point(394, 70);
-            txtstudentid.Name = "txtstudentid";
-            txtstudentid.Size = new Size(249, 31);
-            txtstudentid.TabIndex = 6;
-            txtstudentid.TextChanged += txtstudentid_TextChanged;
+            label1.AutoSize = true;
+            label1.Location = new Point(47, 49);
+            label1.Name = "label1";
+            label1.Size = new Size(217, 25);
+            label1.TabIndex = 19;
+            label1.Text = "Enter the day of the week:";
+            label1.Click += label1_Click_1;
             // 
-            // txtdepartment
+            // dayOfWeekTextBox
             // 
-            txtdepartment.Location = new Point(394, 128);
-            txtdepartment.Name = "txtdepartment";
-            txtdepartment.Size = new Size(249, 31);
-            txtdepartment.TabIndex = 7;
-            txtdepartment.TextChanged += textBox3_TextChanged;
+            dayOfWeekTextBox.Location = new Point(375, 50);
+            dayOfWeekTextBox.Name = "dayOfWeekTextBox";
+            dayOfWeekTextBox.Size = new Size(150, 31);
+            dayOfWeekTextBox.TabIndex = 20;
+            dayOfWeekTextBox.TextChanged += dayOfWeekTextBox_TextChanged;
             // 
-            // txtsemester
+            // dayOfMonthTextBox
             // 
-            txtsemester.Location = new Point(394, 190);
-            txtsemester.Name = "txtsemester";
-            txtsemester.Size = new Size(249, 31);
-            txtsemester.TabIndex = 8;
+            dayOfMonthTextBox.Location = new Point(375, 131);
+            dayOfMonthTextBox.Name = "dayOfMonthTextBox";
+            dayOfMonthTextBox.Size = new Size(150, 31);
+            dayOfMonthTextBox.TabIndex = 22;
             // 
-            // btnshowinfo
+            // yearTextBox
             // 
-            btnshowinfo.BackColor = SystemColors.ControlLight;
-            btnshowinfo.Location = new Point(110, 344);
-            btnshowinfo.Name = "btnshowinfo";
-            btnshowinfo.Size = new Size(174, 43);
-            btnshowinfo.TabIndex = 9;
-            btnshowinfo.Text = "Show Information\n";
-            btnshowinfo.UseVisualStyleBackColor = false;
-            btnshowinfo.Click += button1_Click;
+            yearTextBox.Location = new Point(242, 172);
+            yearTextBox.Name = "yearTextBox";
+            yearTextBox.Size = new Size(150, 31);
+            yearTextBox.TabIndex = 23;
             // 
-            // btnclear
+            // label2
             // 
-            btnclear.BackColor = SystemColors.ControlLight;
-            btnclear.Location = new Point(293, 344);
-            btnclear.Name = "btnclear";
-            btnclear.Size = new Size(191, 43);
-            btnclear.TabIndex = 10;
-            btnclear.Text = "Clear\n";
-            btnclear.UseVisualStyleBackColor = false;
-            btnclear.Click += btnclear_Click;
+            label2.AutoSize = true;
+            label2.Location = new Point(47, 87);
+            label2.Name = "label2";
+            label2.Size = new Size(245, 25);
+            label2.TabIndex = 24;
+            label2.Text = "Enter the name of the month:";
             // 
-            // btnexit
+            // label3
             // 
-            btnexit.BackColor = SystemColors.ControlLight;
-            btnexit.Location = new Point(499, 344);
-            btnexit.Name = "btnexit";
-            btnexit.Size = new Size(178, 43);
-            btnexit.TabIndex = 11;
-            btnexit.Text = "Exit";
-            btnexit.UseVisualStyleBackColor = false;
-            btnexit.Click += btnexit_Click;
+            label3.AutoSize = true;
+            label3.Location = new Point(47, 128);
+            label3.Name = "label3";
+            label3.Size = new Size(298, 25);
+            label3.TabIndex = 25;
+            label3.Text = "Enter the numeric day of the month:";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(47, 172);
+            label4.Name = "label4";
+            label4.Size = new Size(124, 25);
+            label4.TabIndex = 26;
+            label4.Text = "Enter the year:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnexit);
-            Controls.Add(btnclear);
-            Controls.Add(btnshowinfo);
-            Controls.Add(txtsemester);
-            Controls.Add(txtdepartment);
-            Controls.Add(txtstudentid);
-            Controls.Add(txtname);
-            Controls.Add(lbloutput);
-            Controls.Add(lblsemester);
-            Controls.Add(lbldepartment);
-            Controls.Add(lblstudentid);
-            Controls.Add(lblname);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(yearTextBox);
+            Controls.Add(dayOfMonthTextBox);
+            Controls.Add(monthTextBox);
+            Controls.Add(dayOfWeekTextBox);
+            Controls.Add(label1);
+            Controls.Add(dateOutputLabe);
+            Controls.Add(exitButton);
+            Controls.Add(clearButton);
+            Controls.Add(showDateButton);
+            Controls.Add(dateOutputLabel);
             Name = "Form1";
-            Text = "Form1";
+            Text = " ";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label lblname;
-        private Label lblstudentid;
-        private Label lbldepartment;
-        private Label lblsemester;
-        private Label lbloutput;
-        private TextBox txtname;
-        private TextBox txtstudentid;
-        private TextBox txtdepartment;
-        private TextBox txtsemester;
-        private Button btnshowinfo;
-        private Button btnclear;
-        private Button btnexit;
+        private Label dateOutputLabel;
+        private Button showDateButton;
+        private Button clearButton;
+        private Button exitButton;
+        private Label dateOutputLabe;
+        private Label label1;
+        private TextBox dayOfWeekTextBox;
+        private TextBox monthTextBox;
+        private TextBox dayOfMonthTextBox;
+        private TextBox yearTextBox;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }

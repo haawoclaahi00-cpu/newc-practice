@@ -1,4 +1,4 @@
-namespace Student_Information
+namespace WinFormsApp1
 {
     internal static class Program
     {
