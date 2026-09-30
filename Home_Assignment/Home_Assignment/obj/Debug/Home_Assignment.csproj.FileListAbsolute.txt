@@ -1,0 +1,10 @@
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\bin\Debug\Home_Assignment.exe.config
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\bin\Debug\Home_Assignment.exe
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\bin\Debug\Home_Assignment.pdb
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.csproj.AssemblyReference.cache
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.Form1.resources
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.Properties.Resources.resources
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.csproj.GenerateResource.cache
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.exe
+C:\Users\Engr hawo\Documents\home\Home_Assignment\Home_Assignment\obj\Debug\Home_Assignment.pdb

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Engr hawo\\Documents\\home\\Home_Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1768D819-81E1-448F-9859-5C84E39A7D56}|Home_Assignment\\Home_Assignment.csproj|c:\\users\\engr hawo\\documents\\home\\home_assignment\\home_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1768D819-81E1-448F-9859-5C84E39A7D56}|Home_Assignment\\Home_Assignment.csproj|solutionrelative:home_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1768D819-81E1-448F-9859-5C84E39A7D56}|Home_Assignment\\Home_Assignment.csproj|c:\\users\\engr hawo\\documents\\home\\home_assignment\\home_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1768D819-81E1-448F-9859-5C84E39A7D56}|Home_Assignment\\Home_Assignment.csproj|solutionrelative:home_assignment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Engr hawo\\Documents\\home\\Home_Assignment\\Home_Assignment\\Form1.cs",
+              "RelativeDocumentMoniker": "Home_Assignment\\Form1.cs",
+              "ToolTip": "C:\\Users\\Engr hawo\\Documents\\home\\Home_Assignment\\Home_Assignment\\Form1.cs",
+              "RelativeToolTip": "Home_Assignment\\Form1.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T19:04:16.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Engr hawo\\Documents\\home\\Home_Assignment\\Home_Assignment\\Form1.cs",
+              "RelativeDocumentMoniker": "Home_Assignment\\Form1.cs",
+              "ToolTip": "C:\\Users\\Engr hawo\\Documents\\home\\Home_Assignment\\Home_Assignment\\Form1.cs [Design]",
+              "RelativeToolTip": "Home_Assignment\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T18:36:32.794Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
