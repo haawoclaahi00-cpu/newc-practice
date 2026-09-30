@@ -1,0 +1,17 @@
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\bin\Debug\net8.0-windows\Student Information.exe
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\bin\Debug\net8.0-windows\Student Information.deps.json
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\bin\Debug\net8.0-windows\Student Information.runtimeconfig.json
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\bin\Debug\net8.0-windows\Student Information.dll
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\bin\Debug\net8.0-windows\Student Information.pdb
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student_Information.Form1.resources
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student_Information.Properties.Resources.resources
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.csproj.GenerateResource.cache
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.AssemblyInfoInputs.cache
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.AssemblyInfo.cs
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.csproj.CoreCompileInputs.cache
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.dll
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\refint\Student Information.dll
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.pdb
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\Student Information.genruntimeconfig.cache
+C:\Users\Engr hawo\source\repos\Student Information\Student Information\obj\Debug\net8.0-windows\ref\Student Information.dll
