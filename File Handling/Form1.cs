@@ -68,9 +68,9 @@ namespace File_Handling
                 using (StreamWriter outputfile =
                     File.CreateText(txtFileName.Text))
                 {
-                    outputfile.WriteLine("Introduction to C#");
-                    outputfile.WriteLine("File Handling");
-                    outputfile.WriteLine("CA244");
+                    outputfile.WriteLine("Welcome to My First File");
+                    outputfile.WriteLine("My Name is Haawa");
+                    outputfile.WriteLine("I am an IT Student");
                 }
 
                 MessageBox.Show("File written successfully!");
