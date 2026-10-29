@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace File_Handling_Assignment
+namespace File_Handling
 {
     public partial class Form1 : Form
     {
@@ -18,56 +18,92 @@ namespace File_Handling_Assignment
             InitializeComponent();
         }
 
-        private void btnRead_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            string data =
-                "Name: " + txtName.Text + Environment.NewLine +
-                "Age: " + txtAge.Text + Environment.NewLine +
-                "Class: " + txtClass.Text;
+        }
 
-            // Save student information
-            File.WriteAllText("Student.txt", data);
-
-            // Reading using ReadBlock()
-            using (StreamReader reader =
-                   File.OpenText("Student.txt"))
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+           
+            try
             {
-                char[] buffer = new char[1024];
-
-                int count = reader.ReadBlock(buffer, 0, buffer.Length);
-
-                string result = new string(buffer, 0, count);
-
-                lstResult.Items.Clear();
-
-                foreach (string line in
-                         result.Split(new[] { Environment.NewLine },
-                         StringSplitOptions.None))
+                using (StreamWriter outputfile =
+                    File.CreateText(txtFileName.Text))
                 {
-                    lstResult.Items.Add(line);
+                    outputfile.WriteLine("Welcome to CA244");
+                    outputfile.WriteLine("Jamhuriya University");
+                    outputfile.WriteLine("File Handling");
+                }
+
+                MessageBox.Show("File created successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnReadToEnd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (StreamReader Input_file =
+                    File.OpenText(txtFileName.Text))
+                {
+                    txtOutput.Text = Input_file.ReadToEnd();
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
+        private void btnWrite_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                using (StreamWriter outputfile =
+                    File.CreateText(txtFileName.Text))
+                {
+                    outputfile.WriteLine("Introduction to C#");
+                    outputfile.WriteLine("File Handling");
+                    outputfile.WriteLine("CA244");
+                }
+
+                MessageBox.Show("File written successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (File.Exists("Student.txt"))
+          
+            try
             {
-                File.Delete("Student.txt");
+                if (File.Exists(txtFileName.Text))
+                {
+                    File.Delete(txtFileName.Text);
 
-                txtName.Clear();
-                txtAge.Clear();
-                txtClass.Clear();
+                    txtOutput.Clear();
 
-                lstResult.Items.Clear();
-
-                MessageBox.Show("File Deleted Successfully");
+                    MessageBox.Show("File deleted successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("File does not exist!");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("File Not Found");
+                MessageBox.Show(ex.Message);
             }
         }
-
     }
-}
+    }
+    
