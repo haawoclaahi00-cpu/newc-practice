@@ -1,4 +1,4 @@
-﻿namespace File_Handling
+﻿namespace file_Handling_system
 {
     partial class Form1
     {
@@ -28,92 +28,110 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblFileName = new System.Windows.Forms.Label();
-            this.txtFileName = new System.Windows.Forms.TextBox();
-            this.btnCreate = new System.Windows.Forms.Button();
+            this.lbltext = new System.Windows.Forms.Label();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnRead = new System.Windows.Forms.Button();
             this.btnWrite = new System.Windows.Forms.Button();
-            this.btnReadToEnd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.txtOutput = new System.Windows.Forms.TextBox();
-            this.lblOutput = new System.Windows.Forms.Label();
+            this.btnDeleteOne = new System.Windows.Forms.Button();
+            this.btnDeleteAll = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblFileName
+            // lbltext
             // 
-            this.lblFileName.AutoSize = true;
-            this.lblFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFileName.Location = new System.Drawing.Point(92, 41);
-            this.lblFileName.Name = "lblFileName";
-            this.lblFileName.Size = new System.Drawing.Size(151, 25);
-            this.lblFileName.TabIndex = 0;
-            this.lblFileName.Text = "Enter File Name";
+            this.lbltext.AutoSize = true;
+            this.lbltext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltext.Location = new System.Drawing.Point(135, 33);
+            this.lbltext.Name = "lbltext";
+            this.lbltext.Size = new System.Drawing.Size(100, 25);
+            this.lbltext.TabIndex = 0;
+            this.lbltext.Text = "Enter text:";
             // 
-            // txtFileName
+            // txtInput
             // 
-            this.txtFileName.Location = new System.Drawing.Point(286, 38);
-            this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(248, 26);
-            this.txtFileName.TabIndex = 1;
-            this.txtFileName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtInput.Location = new System.Drawing.Point(252, 34);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(215, 26);
+            this.txtInput.TabIndex = 1;
             // 
-            // btnCreate
+            // btnOpen
             // 
-            this.btnCreate.Location = new System.Drawing.Point(150, 137);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(110, 54);
-            this.btnCreate.TabIndex = 2;
-            this.btnCreate.Text = "Create File";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.btnOpen.Location = new System.Drawing.Point(12, 138);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(117, 34);
+            this.btnOpen.TabIndex = 2;
+            this.btnOpen.Text = "Open File";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(498, 92);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(275, 224);
+            this.listBox1.TabIndex = 3;
+            // 
+            // btnRead
+            // 
+            this.btnRead.BackColor = System.Drawing.Color.Green;
+            this.btnRead.ForeColor = System.Drawing.Color.White;
+            this.btnRead.Location = new System.Drawing.Point(72, 189);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(117, 46);
+            this.btnRead.TabIndex = 4;
+            this.btnRead.Text = "Read";
+            this.btnRead.UseVisualStyleBackColor = false;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
             // btnWrite
             // 
-            this.btnWrite.Location = new System.Drawing.Point(298, 137);
+            this.btnWrite.BackColor = System.Drawing.Color.Green;
+            this.btnWrite.ForeColor = System.Drawing.Color.White;
+            this.btnWrite.Location = new System.Drawing.Point(208, 189);
             this.btnWrite.Name = "btnWrite";
-            this.btnWrite.Size = new System.Drawing.Size(128, 54);
-            this.btnWrite.TabIndex = 3;
-            this.btnWrite.Text = "Write File";
-            this.btnWrite.UseVisualStyleBackColor = true;
+            this.btnWrite.Size = new System.Drawing.Size(117, 46);
+            this.btnWrite.TabIndex = 5;
+            this.btnWrite.Text = "Write";
+            this.btnWrite.UseVisualStyleBackColor = false;
             this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
-            // btnReadToEnd
+            // btnDeleteOne
             // 
-            this.btnReadToEnd.Location = new System.Drawing.Point(150, 213);
-            this.btnReadToEnd.Name = "btnReadToEnd";
-            this.btnReadToEnd.Size = new System.Drawing.Size(110, 58);
-            this.btnReadToEnd.TabIndex = 4;
-            this.btnReadToEnd.Text = "Read File";
-            this.btnReadToEnd.UseVisualStyleBackColor = true;
-            this.btnReadToEnd.Click += new System.EventHandler(this.btnReadToEnd_Click);
+            this.btnDeleteOne.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteOne.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteOne.Location = new System.Drawing.Point(61, 241);
+            this.btnDeleteOne.Name = "btnDeleteOne";
+            this.btnDeleteOne.Size = new System.Drawing.Size(128, 47);
+            this.btnDeleteOne.TabIndex = 6;
+            this.btnDeleteOne.Text = "Delete One";
+            this.btnDeleteOne.UseVisualStyleBackColor = false;
+            this.btnDeleteOne.Click += new System.EventHandler(this.btnDeleteOne_Click);
             // 
-            // btnDelete
+            // btnDeleteAll
             // 
-            this.btnDelete.Location = new System.Drawing.Point(298, 213);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(128, 58);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Delete File";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDeleteAll.BackColor = System.Drawing.Color.Red;
+            this.btnDeleteAll.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteAll.Location = new System.Drawing.Point(206, 241);
+            this.btnDeleteAll.Name = "btnDeleteAll";
+            this.btnDeleteAll.Size = new System.Drawing.Size(128, 47);
+            this.btnDeleteAll.TabIndex = 7;
+            this.btnDeleteAll.Text = "Delete All";
+            this.btnDeleteAll.UseVisualStyleBackColor = false;
+            this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
             // 
-            // txtOutput
+            // btnSave
             // 
-            this.txtOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOutput.Location = new System.Drawing.Point(200, 315);
-            this.txtOutput.Multiline = true;
-            this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(404, 123);
-            this.txtOutput.TabIndex = 6;
-            // 
-            // lblOutput
-            // 
-            this.lblOutput.AutoSize = true;
-            this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutput.Location = new System.Drawing.Point(72, 357);
-            this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(101, 25);
-            this.lblOutput.TabIndex = 7;
-            this.lblOutput.Text = "OUTPUT:";
+            this.btnSave.Location = new System.Drawing.Point(23, 317);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(117, 34);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -121,14 +139,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblOutput);
-            this.Controls.Add(this.txtOutput);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnReadToEnd);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnDeleteAll);
+            this.Controls.Add(this.btnDeleteOne);
             this.Controls.Add(this.btnWrite);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.txtFileName);
-            this.Controls.Add(this.lblFileName);
+            this.Controls.Add(this.btnRead);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.lbltext);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -138,14 +157,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblFileName;
-        private System.Windows.Forms.TextBox txtFileName;
-        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Label lbltext;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnRead;
         private System.Windows.Forms.Button btnWrite;
-        private System.Windows.Forms.Button btnReadToEnd;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtOutput;
-        private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.Button btnDeleteOne;
+        private System.Windows.Forms.Button btnDeleteAll;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 

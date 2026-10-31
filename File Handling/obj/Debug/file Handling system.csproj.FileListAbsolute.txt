@@ -1,0 +1,10 @@
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\bin\Debug\file Handling system.exe.config
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\bin\Debug\file Handling system.exe
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\bin\Debug\file Handling system.pdb
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file Handling system.csproj.AssemblyReference.cache
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file_Handling_system.Form1.resources
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file_Handling_system.Properties.Resources.resources
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file Handling system.csproj.GenerateResource.cache
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file Handling system.csproj.CoreCompileInputs.cache
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file Handling system.exe
+C:\Users\Engr hawo\Desktop\file Handling system\file Handling system\obj\Debug\file Handling system.pdb

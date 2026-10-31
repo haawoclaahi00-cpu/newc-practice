@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace File_Handling.Properties
+namespace file_Handling_system.Properties
 {
 
 

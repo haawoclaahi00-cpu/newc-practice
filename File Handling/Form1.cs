@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
-namespace File_Handling
+namespace file_Handling_system
 {
     public partial class Form1 : Form
     {
@@ -18,92 +18,90 @@ namespace File_Handling
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+         
+            SaveFileDialog save = new SaveFileDialog();
 
-        }
+            save.Filter = "Text Files|*.txt";
 
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-           
-            try
+            if (save.ShowDialog() == DialogResult.OK)
             {
-                using (StreamWriter outputfile =
-                    File.CreateText(txtFileName.Text))
-                {
-                    outputfile.WriteLine("Welcome to CA244");
-                    outputfile.WriteLine("Jamhuriya University");
-                    outputfile.WriteLine("File Handling");
-                }
+                File.WriteAllLines(
+                    save.FileName,
+                    listBox1.Items.Cast<string>()
+                );
 
-                MessageBox.Show("File created successfully!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Saved Successfully");
             }
         }
+        
 
-        private void btnReadToEnd_Click(object sender, EventArgs e)
+        private void btnOpen_Click(object sender, EventArgs e)
         {
-            try
+            OpenFileDialog open = new OpenFileDialog();
+
+            open.Filter = "Text Files|*.txt";
+
+            if (open.ShowDialog() == DialogResult.OK)
             {
-                using (StreamReader Input_file =
-                    File.OpenText(txtFileName.Text))
-                {
-                    txtOutput.Text = Input_file.ReadToEnd();
-                }
+                listBox1.Items.Clear();
+
+                string[] lines = File.ReadAllLines(open.FileName);
+
+                listBox1.Items.AddRange(lines);
             }
-            catch (Exception ex)
+        }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+          
+            if (listBox1.SelectedItem != null)
             {
-                MessageBox.Show(ex.Message);
+                txtInput.Text = listBox1.SelectedItem.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Please select an item");
             }
         }
 
         private void btnWrite_Click(object sender, EventArgs e)
         {
-            
-            try
+            if (txtInput.Text != "")
             {
-                using (StreamWriter outputfile =
-                    File.CreateText(txtFileName.Text))
-                {
-                    outputfile.WriteLine("Welcome to My First File");
-                    outputfile.WriteLine("My Name is Haawa");
-                    outputfile.WriteLine("I am an IT Student");
-                }
+                listBox1.Items.Add(txtInput.Text);
 
-                MessageBox.Show("File written successfully!");
+                txtInput.Clear();
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Enter some text");
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDeleteOne_Click(object sender, EventArgs e)
         {
           
-            try
+            if (listBox1.SelectedIndex != -1)
             {
-                if (File.Exists(txtFileName.Text))
-                {
-                    File.Delete(txtFileName.Text);
-
-                    txtOutput.Clear();
-
-                    MessageBox.Show("File deleted successfully!");
-                }
-                else
-                {
-                    MessageBox.Show("File does not exist!");
-                }
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Select an item to delete");
             }
+        }
+
+        private void btnDeleteAll_Click(object sender, EventArgs e)
+        {
+          
+            listBox1.Items.Clear();
         }
     }
     }
     
+    
+    
+    
+
