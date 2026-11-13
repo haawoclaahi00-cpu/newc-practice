@@ -446,37 +446,3 @@ Any code you write inside the Load event will execute when the form is launched.
 Important
 
 The Load Event takes place when the Form is launched.
-
-⸻
-
-IMPORTANT THEORY – EXAM REVISION
-
-1. while Loop: A pretest loop that repeats while the Boolean expression is true.
-2. Infinite Loop: A loop that repeats until the program is interrupted.
-3. Increment: Increasing the value of a variable.
-4. Decrement: Decreasing the value of a variable.
-5. Postfix: Uses the old value first, then changes the value.
-6. Prefix: Changes the value first, then uses the new value.
-7. for Loop: Uses Initialization, Test, and Update.
-8. do-while Loop: A posttest loop that executes at least once.
-9. Text File: Contains data encoded as text.
-10. Binary File: Contains data that has not been converted to text.
-11. StreamWriter: Used for writing data to a text file.
-12. StreamReader: Used for reading data from a text file.
-13. CreateText: Creates a text file and erases old contents if it already exists.
-14. AppendText: Adds new data without erasing old contents.
-15. WriteLine: Writes data and moves to a new line.
-16. Write: Writes data without moving to a new line.
-17. EndOfStream: Indicates whether the end of a file has been reached.
-18. OpenFileDialog: Displays an Open dialog box.
-19. SaveFileDialog: Displays a Save As dialog box.
-20. DialogResult.OK: Indicates that the user selected Open.
-21. DialogResult.Cancel: Indicates that the user selected Cancel.
-22. Filename: Stores the selected file’s path and filename.
-23. InitialDirectory: Specifies the directory displayed initially.
-24. Random: Generates random numbers.
-25. Next: Generates an integer.
-26. NextDouble: Generates a floating-point number between 0.0 and 1.0.
-27. Load Event: Takes place when the Form is loaded into memory.
-
-END OF CHAPTER 4 – THEORY ONLY
