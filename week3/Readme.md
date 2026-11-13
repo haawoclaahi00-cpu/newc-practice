@@ -253,4 +253,3 @@ Text is suitable for simple text-only lists, while SelectedItem is useful for mo
 
 ⸻
 
-END OF CHAPTER – THEORY ONLY
